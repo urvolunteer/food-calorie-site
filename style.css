@@ -188,38 +188,71 @@ footer {
 }
 
 
-
 @media (max-width: 768px) {
 
     nav {
         flex-direction: column;
+        align-items: center;
         padding: 20px;
-        gap: 20px;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+        font-size: 32px;
     }
 
     .nav-links {
+        width: 100%;
         flex-direction: column;
         align-items: center;
-        gap: 15px;
+        gap: 10px;
     }
+
+        .nav-links li {
+            width: 100%;
+            text-align: center;
+        }
+
+        .nav-links a {
+            display: block;
+            padding: 12px;
+            width: 100%;
+            background: #222;
+            border-radius: 8px;
+        }
 
     .dropdown-menu {
         position: static;
+        display: none;
         width: 100%;
-        margin-top: 10px;
+        margin-top: 8px;
+        background: #181818;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu li {
+        padding: 0;
+    }
+
+    .dropdown-menu a {
+        background: #2a2a2a;
     }
 
     .hero {
         height: auto;
-        padding: 100px 20px;
+        padding: 80px 20px;
     }
 
         .hero h1 {
-            font-size: 38px;
+            font-size: 36px;
+            line-height: 1.2;
         }
 
         .hero p {
-            font-size: 18px;
+            font-size: 17px;
         }
 
         .hero button {
@@ -227,35 +260,37 @@ footer {
             max-width: 250px;
         }
 
-    .nutrition-grid {
+    .nutrition-grid,
+    .recipes {
         grid-template-columns: 1fr;
     }
 
     .recipes {
-        grid-template-columns: 1fr;
         padding: 30px 20px;
     }
 
-    .science,
     .nutrition-section,
-    .about-section,
-    .selector-section {
+    .about-section {
         padding: 50px 20px;
     }
 
         .section-title,
-        .science h2,
-        .selector-section h2,
+        .category-title,
         .nutrition-section h2,
         .about-section h2 {
-            font-size: 32px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+    .card {
+        width: 100%;
+    }
+
+        .card img {
+            height: 220px;
         }
 
     select {
         width: 100%;
-    }
-
-    .card img {
-        height: 200px;
     }
 }
