@@ -186,3 +186,76 @@ footer {
     background: #1e1e1e;
     margin-top: 40px;
 }
+
+
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .dropdown-menu {
+        position: static;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .hero {
+        height: auto;
+        padding: 100px 20px;
+    }
+
+        .hero h1 {
+            font-size: 38px;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        .hero button {
+            width: 100%;
+            max-width: 250px;
+        }
+
+    .nutrition-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .recipes {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+    }
+
+    .science,
+    .nutrition-section,
+    .about-section,
+    .selector-section {
+        padding: 50px 20px;
+    }
+
+        .section-title,
+        .science h2,
+        .selector-section h2,
+        .nutrition-section h2,
+        .about-section h2 {
+            font-size: 32px;
+        }
+
+    select {
+        width: 100%;
+    }
+
+    .card img {
+        height: 200px;
+    }
+}
