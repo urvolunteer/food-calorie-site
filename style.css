@@ -188,71 +188,70 @@ footer {
 }
 
 
+html, body {
+    overflow-x: hidden;
+}
+
 @media (max-width: 768px) {
 
     nav {
         flex-direction: column;
         align-items: center;
-        padding: 20px;
+        width: 100%;
+        padding: 15px;
     }
 
     .logo {
-        margin-bottom: 20px;
-        font-size: 32px;
+        font-size: 28px;
+        margin-bottom: 15px;
     }
 
     .nav-links {
+        display: flex;
+        flex-direction: column !important;
         width: 100%;
-        flex-direction: column;
-        align-items: center;
         gap: 10px;
+        padding: 0;
     }
 
         .nav-links li {
+            list-style: none;
             width: 100%;
-            text-align: center;
         }
 
         .nav-links a {
             display: block;
-            padding: 12px;
             width: 100%;
+            text-align: center;
+            padding: 12px;
             background: #222;
             border-radius: 8px;
         }
 
     .dropdown-menu {
         position: static;
-        display: none;
         width: 100%;
-        margin-top: 8px;
-        background: #181818;
+        display: none;
+        margin-top: 5px;
     }
 
     .dropdown:hover .dropdown-menu {
         display: block;
     }
 
-    .dropdown-menu li {
-        padding: 0;
-    }
-
-    .dropdown-menu a {
-        background: #2a2a2a;
-    }
-
     .hero {
-        height: auto;
+        width: 100%;
         padding: 80px 20px;
+        background-position: center;
     }
 
         .hero h1 {
-            font-size: 36px;
+            font-size: 42px;
             line-height: 1.2;
         }
 
         .hero p {
-            font-size: 17px;
+            font-size: 18px;
         }
 
         .hero button {
@@ -260,37 +259,17 @@ footer {
             max-width: 250px;
         }
 
-    .nutrition-grid,
     .recipes {
         grid-template-columns: 1fr;
+        padding: 20px;
     }
-
-    .recipes {
-        padding: 30px 20px;
-    }
-
-    .nutrition-section,
-    .about-section {
-        padding: 50px 20px;
-    }
-
-        .section-title,
-        .category-title,
-        .nutrition-section h2,
-        .about-section h2 {
-            font-size: 30px;
-            text-align: center;
-        }
 
     .card {
         width: 100%;
     }
 
         .card img {
+            width: 100%;
             height: 220px;
         }
-
-    select {
-        width: 100%;
-    }
 }
